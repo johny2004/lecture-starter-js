@@ -3,18 +3,14 @@ import callApi from '../helpers/apiHelper';
 class FighterService {
     #endpoint = 'fighters.json';
 
+    #detailsEndpoint = 'details/fighter';
+
     async getFighters() {
-        try {
-            const apiResult = await callApi(this.#endpoint);
-            return apiResult;
-        } catch (error) {
-            throw error;
-        }
+        return callApi(this.#endpoint);
     }
 
     async getFighterDetails(id) {
-        // todo: implement this method
-        // endpoint - `details/fighter/${id}.json`;
+        return callApi(`${this.#detailsEndpoint}/${id}.json`);
     }
 }
 

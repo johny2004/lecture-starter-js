@@ -7,4 +7,6 @@ const controls = {
     PlayerTwoCriticalHitCombination: ['KeyU', 'KeyI', 'KeyO']
 };
 
+export { controls };
+
 export default controls;

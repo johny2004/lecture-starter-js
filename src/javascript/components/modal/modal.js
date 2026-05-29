@@ -43,3 +43,5 @@ export default function showModal({ title, bodyElement, onClose = () => {} }) {
 
     root.append(modal);
 }
+
+export { showModal };
